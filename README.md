@@ -1,10 +1,5 @@
 # Calculator Microservice
 
-Here’s a **README.md** template based on your request, ready to be added to your project:
-
-markdown
-# Calculator Microservice
-
 This project is a simple **Calculator Microservice** built with **Node.js** and **Express**. The microservice provides basic arithmetic operations such as **addition**, **subtraction**, **multiplication**, and **division**. It is designed to handle incoming HTTP requests and perform calculations based on provided parameters.
 
 ---
