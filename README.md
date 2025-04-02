@@ -35,7 +35,7 @@ This **Calculator Microservice** provides a simple and efficient way to perform 
 
 ### Prerequisites
 
-- **Node.js**: Download and install from [here](https://nodejs.org/en/download/).
+- **app.js**: Download and install from [here](https://nodejs.org/en/download/).
 - **npm**: Comes bundled with Node.js.
 
 ### Steps to Install
@@ -61,7 +61,7 @@ This **Calculator Microservice** provides a simple and efficient way to perform 
 
 1. To run the server, execute the following command in the project directory:
    ```bash
-   node server.js
+   node app.js
    ```
 
 2. The server will start on `http://localhost:3000` by default.
