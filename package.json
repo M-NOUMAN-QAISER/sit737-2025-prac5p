@@ -19,10 +19,16 @@
   "dependencies": {
     "express": "^4.21.2",
     "winston": "^3.17.0"
-    "description": " "
-  
   },
   "devDependencies": {
     "nodemon": "^3.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-NOUMAN-QAISER/sit737-2025-prac4p.git"
+  },
+  "bugs": {
+    "url": "https://github.com/M-NOUMAN-QAISER/sit737-2025-prac4p/issues"
+  },
+  "homepage": "https://github.com/M-NOUMAN-QAISER/sit737-2025-prac4p#readme"
 }
