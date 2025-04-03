@@ -1,10 +1,5 @@
 # Calculator Microservice
 
-Here’s a **README.md** template based on your request, ready to be added to your project:
-
-markdown
-# Calculator Microservice
-
 This project is a simple **Calculator Microservice** built with **Node.js** and **Express**. The microservice provides basic arithmetic operations such as **addition**, **subtraction**, **multiplication**, and **division**. It is designed to handle incoming HTTP requests and perform calculations based on provided parameters.
 
 ---
@@ -40,7 +35,7 @@ This **Calculator Microservice** provides a simple and efficient way to perform 
 
 ### Prerequisites
 
-- **Node.js**: Download and install from [here](https://nodejs.org/en/download/).
+- **app.js**: Download and install from [here](https://nodejs.org/en/download/).
 - **npm**: Comes bundled with Node.js.
 
 ### Steps to Install
@@ -66,7 +61,7 @@ This **Calculator Microservice** provides a simple and efficient way to perform 
 
 1. To run the server, execute the following command in the project directory:
    ```bash
-   node server.js
+   node app.js
    ```
 
 2. The server will start on `http://localhost:3000` by default.
