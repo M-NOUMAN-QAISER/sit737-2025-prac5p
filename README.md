@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Calculator Microservice
 
 This project is a simple **Calculator Microservice** built with **Node.js** and **Express**. The microservice provides basic arithmetic operations (addition, subtraction, multiplication, division) and advanced operations (exponentiation, square root, modulo). It is designed to handle incoming HTTP requests and perform calculations based on provided parameters.
@@ -241,3 +242,6 @@ To monitor logs in real-time:
     ```
 
 This allows you to view the latest logs as they are generated.
+=======
+# sit737-2025-prac5p
+>>>>>>> f6e9c6f2d023556362425dc587e5f0fe34b9f9d5
