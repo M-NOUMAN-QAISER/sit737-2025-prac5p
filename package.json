@@ -1,7 +1,7 @@
 {
   "name": "calculator-microservice",
   "version": "1.0.0",
-  "description": "A simple calculator microservice for SIT737 4.1P",
+  "description": "A simple calculator microservice for SIT737 5.1P",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/M-NOUMAN-QAISER/sit737-2025-prac4p.git"
+    "url": "git+https://github.com/M-NOUMAN-QAISER/sit737-2025-prac5p.git"
   },
   "bugs": {
-    "url": "https://github.com/M-NOUMAN-QAISER/sit737-2025-prac4p/issues"
+    "url": "https://github.com/M-NOUMAN-QAISER/sit737-2025-prac5/issues"
   },
-  "homepage": "https://github.com/M-NOUMAN-QAISER/sit737-2025-prac4p#readme"
+  "homepage": "https://github.com/M-NOUMAN-QAISER/sit737-2025-prac5p#readme"
 }
