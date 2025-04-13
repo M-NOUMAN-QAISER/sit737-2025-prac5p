@@ -1,6 +1,3 @@
-## 📄 `README.md` Template (Copy into your GitHub Repo)
-
-
 # SIT737 – 5.1P: Calculator Microservice (Dockerised)
 
 This project is a Node.js microservice that performs basic calculator operations. It has been containerised using Docker and deployed using Docker Compose.
