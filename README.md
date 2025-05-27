@@ -1,85 +1,69 @@
-# SIT737 – 5.1P: Calculator Microservice (Dockerised)
+# 5.2D Calculator Microservice
 
-This project is a Node.js microservice that performs basic calculator operations. It has been containerised using Docker and deployed using Docker Compose.
+A simple Node.js calculator API containerized with Docker and deployed to Google Cloud.
 
----
+## 🚀 Quick Start
 
-## 🧰 Tools Used
-- Node.js
-- Express.js
-- Docker & Docker Compose
-- Winston (Logging)
-- GitHub
-
----
-
-## 📦 Features
-- Basic operations: add, subtract, multiply, divide
-- Advanced operations: exponent, square root, modulo
-- Logs all requests and errors
-- Health check enabled for Docker container
-
----
-
-## 📁 Project Structure
-```
-calculator-microservice/
-│
-├── app.js                 # Main application logic
-├── Dockerfile             # Docker container definition
-├── docker-compose.yml     # Docker Compose configuration
-├── package.json           # Project metadata and dependencies
-└── logs/                  # Winston logs directory (auto-created)
-```
-
----
-
-## 🚀 Setup & Run Instructions
-
-### 1. Clone the Repository
 ```bash
-git clone https://github.com/M-NOUMAN-QAISER/sit737-2025-prac5p.git
-cd sit737-2025-prac5p
+# Clone and run locally
+git clone https://github.com/M-NOUMAN-QAISER/sit737-2025-prac5d.git
+cd sit737-2025-prac5d
+npm install
+npm start
 ```
 
-### 2. Build the Docker Image
-```bash
-docker-compose build
-```
+Visit: `http://localhost:3000`
 
-### 3. Run the Container
+## 📡 API Endpoints
+
+| Operation | URL | Example |
+|-----------|-----|---------|
+| Add | `/add?num1=5&num2=3` | Returns: `{"result": 8}` |
+| Subtract | `/subtract?num1=10&num2=4` | Returns: `{"result": 6}` |
+| Multiply | `/multiply?num1=7&num2=8` | Returns: `{"result": 56}` |
+| Divide | `/divide?num1=20&num2=4` | Returns: `{"result": 5}` |
+| Square Root | `/sqrt?num=16` | Returns: `{"result": 4}` |
+| Power | `/power?base=2&exponent=3` | Returns: `{"result": 8}` |
+
+## 🐳 Docker
+
 ```bash
+# Build and run
+docker build -t calculator-microservice .
+docker run -p 3000:3000 calculator-microservice
+
+# Or use docker-compose
 docker-compose up
 ```
 
-### 4. Open the App
-Visit: [http://localhost:3000](http://localhost:3000)
+## ☁️ Google Cloud Deployment
 
----
+```bash
+# Setup
+gcloud auth login
+gcloud config set project YOUR_PROJECT_ID
+gcloud auth configure-docker
 
-## 🩺 Health Check
+# Deploy
+docker tag calculator-microservice gcr.io/YOUR_PROJECT_ID/calculator-microservice:v1
+docker push gcr.io/YOUR_PROJECT_ID/calculator-microservice:v1
 
-Docker Compose includes a health check:
-```yaml
-healthcheck:
-  test: ["CMD", "curl", "-f", "http://localhost:3000/add?num1=1&num2=1"]
-  interval: 30s
-  timeout: 10s
-  retries: 3
+# Run from cloud
+docker run -p 3001:3000 gcr.io/YOUR_PROJECT_ID/calculator-microservice:v1
 ```
 
-The container will restart if it becomes unhealthy.
+## 📁 Files
+
+- `app.js` - Main server file
+- `package.json` - Dependencies
+- `Dockerfile` - Container config
+- `docker-compose.yml` - Local development
+
+## 🎯 Purpose
+
+SIT737 Task 5.2D - Dockerization and cloud deployment of a Node.js microservice.
 
 ---
 
-## 📤 Submission
-
-GitHub Repository:  
-[https://github.com/M-NOUMAN-QAISER/sit737-2025-prac5p](https://github.com/M-NOUMAN-QAISER/sit737-2025-prac5p)
-
-This completes all required steps of the 5.1P assessment task.
-
----
-
-## 👨‍💻 Author
-**Muhammad Nouman Qaiser**
+**Author**: Muhammad Nouman Qaiser  
+**Course**: SIT737 - Cloud Native Application Development
